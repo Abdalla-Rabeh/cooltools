@@ -41,4 +41,4 @@ var message = `
 `; 
 
 var whatsappLink = generateWhatsAppLink(phoneNumber, message);
-document.getElementById('whatsappLink').href = whatsappLink;
+document.querySelectorAll('#whatsappLink').href = whatsappLink;
