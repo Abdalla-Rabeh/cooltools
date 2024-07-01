@@ -25,3 +25,15 @@ var currentYear = new Date().getFullYear();
     
 
 document.getElementById("currentYear").textContent = currentYear;
+function generateWhatsAppLink(phoneNumber, message) {
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  var baseUrl = isMobile ? 'https://api.whatsapp.com/send' : 'https://web.whatsapp.com/send';
+  var urlParams = new URLSearchParams({ phone: phoneNumber, text: message });
+  return baseUrl + '?' + urlParams.toString();
+}
+
+var phoneNumber = '201023279424'; // Replace with your phone number
+var message = 'Hi'; // Replace with your message
+
+var whatsappLink = generateWhatsAppLink(phoneNumber, message);
+document.getElementById('whatsappLink').href = whatsappLink;
