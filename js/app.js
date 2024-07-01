@@ -20,3 +20,8 @@ $(".scroll_top").click(function(e){
       
   },1000)
 })
+
+var currentYear = new Date().getFullYear();
+    
+
+document.getElementById("currentYear").textContent = currentYear;

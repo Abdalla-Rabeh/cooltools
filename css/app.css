@@ -15098,8 +15098,15 @@ html {
   right: 5px;
 }
 [dir] .footer {
-  background-color: #fefefe;
+  font-size: 20px;
+  background-color: #111;
   border-top: 1px solid #f0f0f0;
+  color: #fff;
+  padding: 10px;
+}
+[dir] .footer a {
+  font-weight: bold;
+  color: #F5A623;
 }
 [dir] .footer .footer-body,
 [dir] .footer .footer-brand,
