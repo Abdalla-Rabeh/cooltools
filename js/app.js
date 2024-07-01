@@ -33,7 +33,12 @@ function generateWhatsAppLink(phoneNumber, message) {
 }
 
 var phoneNumber = '201023279424'; // Replace with your phone number
-var message = 'Hi'; // Replace with your message
+var message = `
+مرحبا 
+انا مهتم بالمنتج 
+ما هي طرق الدفع
+
+`; 
 
 var whatsappLink = generateWhatsAppLink(phoneNumber, message);
 document.getElementById('whatsappLink').href = whatsappLink;
