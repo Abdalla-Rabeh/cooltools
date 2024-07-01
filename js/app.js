@@ -33,9 +33,11 @@ function generateWhatsAppLink(phoneNumber, message) {
 }
 
 var phoneNumber = '201023279424'; // Replace with your phone number
-var message = `مرحبا 
-انا مهتم بالمنتج 
-ما هي طرق الدفع
+var message = `للأشتراك في الحزمة كامله
+ب10$
+يرجي تحويل مبلغ الأشتراك الي رقم (01023279424) وتأكيد التحويل بأرسال سكرين شوت
+
+سيتم إرسال الحزمه في خلال 24 ساعه من وقت الدفع ❤️💯
 `; 
 
 var whatsappLink = generateWhatsAppLink(phoneNumber, message);
