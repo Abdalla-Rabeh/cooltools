@@ -1937,100 +1937,6 @@
     <script src="js/app.js"></script>
     <!-- js -->
 
-    <script async>
-      const promise = import("https://openfpcdn.io/fingerprintjs/v4").then(
-        (fp) => fp.load()
-      );
-
-      promise
-        .then((fp) => fp.get())
-        .then((res) => {
-          const now = new Date();
-          now.setTime(now.getTime() + 1 * 3600 * 1000);
-
-          const urls = [
-            new URL("https://youcan.shop"),
-            new URL(window.location),
-          ];
-          urls.forEach(
-            (u) =>
-              (document.cookie = `_ycfp=${
-                res.visitorId
-              }; expires=${now.toUTCString()}; path=/; domain=${u.hostname};`)
-          );
-        });
-    </script>
-
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-11467136469"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-11467136469");
-    </script>
-
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "433383415874185");
-      fbq("track", "PageView");
-    </script>
-
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "433383415874185");
-      fbq("track", "PageView");
-    </script>
-
     <script>
       // Here we set the whole Dotshop object
       window.Dotshop = {
@@ -2087,30 +1993,9 @@
       };
     </script>
 
-    <script src="https://static4.youcan.shop/api/languages-cell-down.json?timestamp=1698050376"></script>
-
     <script src="https://static4.youcan.shop/store-front/js/bootstrap.js?id=24c9c0529e88f45292179f2526228604"></script>
-    <script src="https://static4.youcan.shop/store-front/js/app.js?id=6d039bacaeb367b2983bd40d2b3704af"></script>
-    <script>
-      window.Dotshop.font = {
-        body: {
-          value: "Lato",
-        },
-        menu: {
-          value: "Lato",
-        },
-      };
 
-      initFonts();
-    </script>
     <script src="https://static4.youcan.shop/store-front/js/home/app.js?id=29a3f1b1f8963a3aa08a515a22639b58"></script>
-
-    <script>
-      gtag("event", "conversion", {
-        send_to: "AW-11467136469/xdr_CPi954YZENW7-tsq",
-        transaction_id: "",
-      });
-    </script>
 
     <!--  js -->
   </body>
