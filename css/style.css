@@ -3065,3 +3065,15 @@ html[dir="rtl"] #PBS-8w7rxr1711813433109 .inner-container {
 @media (min-width: 992px) and (max-width: 1200px) {
   .navbar-nav .nav-item {
     font-size: 12px !important; } }
+
+    @media (min-width: 300px) and (max-width: 600px) {
+    .footer img{
+      width: 45% !important;
+    }
+    .footer i {
+      font-size: 50px;
+    }
+  }
+  .footer i {
+    font-size: 45px;
+  }
